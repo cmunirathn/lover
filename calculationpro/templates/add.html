@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arithmetic Calculations</title>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<style>
+    body{
+        background-color: cyan;
+    }
+</style>
+</head>
+<style>
+    form{
+        margin-top: 50px;
+    }
+    b{
+        font-size: 25px;
+    }
+    .ip1{
+        width:300px;
+    }
+    .btn{
+        margin-left: 20px;
+        width: 80px;
+    }
+    h3{
+        text-align: center;
+        font-family: cursive;
+        color: red;
+        margin-bottom: 30px;
+    }
+</style>
+<body>
+<div class="container">
+    <div calss="row">
+        <div class="offset-md-2 col-md-6">
+            <form action="./calculationapp/output" method="get">
+                <h3>please perform arithmetic operations</h3>
+                {% csrf_token %}
+                <b>Enter 1<sup>st</sup>Number:&nbsp</b><input type="text" name="t1" class="ip1">
+                  <b>Enter 2<sup>nd</sup>Number:&nbsp</b><input type="text" name="t2" class="ip1">
+                <center>
+                    <input type="submit" value="add" name="but" class="btn btn-primary">
+                    <input type="submit" value="sub" name="but" class="btn btn-info">
+                    <input type="submit" value="mul" name="but" class="btn btn-success">
+                    <input type="submit" value="div" name="but" class="btn btn-danger">
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
